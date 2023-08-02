@@ -1,0 +1,46 @@
+header {
+    background: pink;
+    padding: 25px 0; margin: 0 auto;
+    width: calc(100% - 60px); height: 100px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header .logo {width: 213px;}
+header .logo a {}
+header .logo a img{
+    width: 100%; height: 50px;
+    padding-left: 50px;
+    background: red;
+}
+header .right{
+    background: aqua;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:50px;
+}
+header .right h2{}
+header .right h2 a{
+    font-weight: 700;
+}
+header .right .search {
+    border: 1px solid black;
+    background: #1c1c1c;
+    border-radius: 20px;
+    margin: 0 25px; display: flex; flex-flow: row nowrap;
+}
+header .right .search fieldset{}
+header .right .search fieldset #searchtxt {
+        width: 330px; height: 50px;
+        background: none; color: #c1c1c1;
+        margin-left: 10px;
+}
+header .right .search fieldset #searchbtn {
+    background: url(../images/icon_search.png);
+}
+header .right .icon {}
+header .right .icon #login {}
+header .right .icon #cart {
+    margin:0 20px;
+}
+header .right .icon #menu {}
