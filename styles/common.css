@@ -5,11 +5,13 @@ header {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
 }
-header .logo {width: 213px;}
+header .logo {
+    width: 213px;
+    align-self: center;
+}
 header .logo a {}
 header .logo a img{
-    width: 100%; height: 50px;
-    padding-left: 50px;
+    width: 100%; 
     background: red;
 }
 header .right{
@@ -17,7 +19,6 @@ header .right{
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-right:50px;
 }
 header .right h2{}
 header .right h2 a{
@@ -27,16 +28,24 @@ header .right .search {
     border: 1px solid black;
     background: #1c1c1c;
     border-radius: 20px;
-    margin: 0 25px; display: flex; flex-flow: row nowrap;
+    margin: 0 25px;
 }
-header .right .search fieldset{}
+header .right .search fieldset{
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
 header .right .search fieldset #searchtxt {
-        width: 330px; height: 50px;
-        background: none; color: #c1c1c1;
-        margin-left: 10px;
+    width: 330px; height: 50px;
+    background: none; color: #c1c1c1;
+    margin-left: 10px;
 }
 header .right .search fieldset #searchbtn {
-    background: url(../images/icon_search.png);
+    background: none;
+    width: 30px; height: 30px;
+    
+}
+header .right .search fieldset #searchbtn img {
+    width: 100%;
 }
 header .right .icon {}
 header .right .icon #login {}
