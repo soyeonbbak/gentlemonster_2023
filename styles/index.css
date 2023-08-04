@@ -47,3 +47,36 @@ main .visual video {
 /* 1. 반응형웹에 @media 특성해상도마다 비디오의 크기 설정값 변경하는 방법  => 보통 이 방법으로 많이 사용한다.*/
 /* 2. 가장 큰 데스크탑 기준으로 너비를 100%보다 크게 설정하고 넘치게 하는 방법 => 크기를 줄일 때 아래가 뜨면 미디어로 방법을 바꿔야한다. */
 /* 3. 상대크기가 아닌 절대크기값(px)로 크기를 설정해서 화면 해상도에 영향을 받지않는 방법 => 가장 쉽고 간편한 방법.*/
+main .adver_bnr {
+    background: url(../images/bnr2.jpg);
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+main .adver_bnr .txt {
+    position: absolute;
+    text-align: center;
+    top: 25%; left: 10%;
+}
+main .adver_bnr .txt p{
+    font-size: 1.777em;
+}
+main .adver_bnr .txt h2 {
+    font-size: 3.157em; font-weight: 700;
+    margin: 10px auto;
+}
+main .adver_bnr .link {
+    padding-top: 20px;
+    display: flex; 
+    justify-content: center;
+}
+main .adver_bnr .link a {
+    padding-top: 10px;
+    font-size: 1.333em;
+    width: 180px; height: 45px;
+    background-color: rgba(204, 204, 204, 0.7);
+    border-radius: 5px; margin: 0 10px;
+}
+main .adver_bnr .link a:hover {
+    background: black; color: white;
+}
