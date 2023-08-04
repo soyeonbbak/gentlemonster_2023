@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* main 영역 */
 /*.main1. 1. visual */
 main .visual {
@@ -80,3 +81,87 @@ main .adver_bnr .link a {
 main .adver_bnr .link a:hover {
     background: black; color: white;
 }
+=======
+/* main 영역 */
+/*.main1. 1. visual */
+main .visual {
+    position: relative;
+    height: 100vh; overflow: hidden;
+}
+main .visual .txt {
+    position: absolute; top: 65%; right: 30%;
+    z-index: 900;
+    text-align: center;
+} 
+main .visual .txt p{
+    font-size: 1.777em;
+    color: white;
+}
+main .visual .txt h1{
+    font-size: 3.157em; font-weight: 700;
+    margin: 10px auto;
+    color: white;
+}
+main .visual .txt .link {
+    padding-top: 20px;
+    display: flex; 
+    justify-content: center;
+}
+main .visual .txt .link a {
+    padding-top: 10px;
+    font-size: 1.333em;
+    width: 180px; height: 45px;
+    background-color: rgba(204, 204, 204, 0.7);
+    border-radius: 5px; margin: 0 10px;
+    z-index: 999;
+}
+main .visual .txt .link a:hover {
+    background: black; color: white;
+}
+main .visual video {
+    width: 100%;
+    /* 화면크기 조정시 비디오 중심축 맞추기 */
+    /* 필수조건 ★ 비디오의 부모가 vh or px로 높이설정이 되어있어야함. */
+    position:absolute; left: 50%;
+    transform: translateX(-50%);
+    /* 방법3 */
+    /* width: 1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백해결방법 */
+/* 1. 반응형웹에 @media 특성해상도마다 비디오의 크기 설정값 변경하는 방법  => 보통 이 방법으로 많이 사용한다.*/
+/* 2. 가장 큰 데스크탑 기준으로 너비를 100%보다 크게 설정하고 넘치게 하는 방법 => 크기를 줄일 때 아래가 뜨면 미디어로 방법을 바꿔야한다. */
+/* 3. 상대크기가 아닌 절대크기값(px)로 크기를 설정해서 화면 해상도에 영향을 받지않는 방법 => 가장 쉽고 간편한 방법.*/
+main .adver_bnr {
+    background: url(../images/bnr2.jpg);
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+main .adver_bnr .txt {
+    position: absolute;
+    text-align: center;
+    top: 25%; left: 10%;
+}
+main .adver_bnr .txt p{
+    font-size: 1.777em;
+}
+main .adver_bnr .txt h2 {
+    font-size: 3.157em; font-weight: 700;
+    margin: 10px auto;
+}
+main .adver_bnr .link {
+    padding-top: 20px;
+    display: flex; 
+    justify-content: center;
+}
+main .adver_bnr .link a {
+    padding-top: 10px;
+    font-size: 1.333em;
+    width: 180px; height: 45px;
+    background-color: rgba(204, 204, 204, 0.7);
+    border-radius: 5px; margin: 0 10px;
+}
+main .adver_bnr .link a:hover {
+    background: black; color: white;
+}
+>>>>>>> ef4e2c83daaac61f697588a474ed2a9b647d19a1
