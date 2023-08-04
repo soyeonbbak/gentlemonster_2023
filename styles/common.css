@@ -75,11 +75,7 @@ header #open_nav {
     width: 100%; height: 100vh;
     background: #f1f1f1; 
     overflow: auto;
-<<<<<<< HEAD
     /* 웹 브라우저 y폭 기준으로 내용이 넘칠 경우 스크롤을 표시하고 넘치지 않는다면 스크롤을 숨긴다. */
-=======
-    /* 웹 브라우저 y푹 기준으로 내용이 넘칠 경우 스크롤을 표시하고 넘치지 않는다면 스크롤을 숨긴다. */
->>>>>>> f3f777e63f67e5585cd4bbd62ddf0af9b0ca9a26
 }
 header #open_nav #nav_close {
     position: absolute; right: 100px; top: 50px ;

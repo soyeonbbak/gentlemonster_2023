@@ -1,0 +1,30 @@
+/* main 영역 */
+/*.main1. 1. visual */
+main .visual {
+    position: relative;
+}
+main .visual .txt {
+    text-align: center;
+    position: absolute; right:30%; top: 30%;
+    background: pink;} 
+main .visual .txt p{
+    font-size: 1.777em;
+    color: white;
+}
+main .visual .txt h1{
+    font-size: 3.157em; font-weight: 700;
+    margin: 10px auto;
+}
+main .visual .txt .link {
+    background: pink;
+    padding-top: 20px;
+}
+main .visual .txt .link a {
+    font-size: 1.333em;
+    width: 180px; height: 45px;
+    border: 1px solid black; background: #F5F5F5;
+    
+}
+main .visual video {
+    width: 100%;
+}
