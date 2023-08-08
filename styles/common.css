@@ -122,3 +122,54 @@ header #open_nav #nav_adver .swiper-button-next::after{
     0%{border-bottom: 1px solid rgb(107, 107, 107);}
     100%{border-bottom: 1px solid rgb(107, 107, 107);}
 }
+/* footer */
+footer {padding: 0 30px;}
+footer .f_menu {
+    display: flex; flex-flow: row nowrap;
+}
+footer .f_menu dl{
+}
+footer .f_menu dl dt{
+    padding: 50px 0 30px;
+}
+footer .f_menu dl dd{
+}
+footer .f_menu dl dd a{
+    line-height: 25px; font-size: 0.8em;
+    color: #888;
+    transition: all ;
+}
+footer .f_menu dl dd a:hover{ font-weight: 700; color: black;}
+footer .f_menu .service {
+    padding-left: 32px;
+}
+footer .f_menu .service dt {}
+footer .f_menu .service dd {}
+footer .f_menu .service dd a {}
+footer .f_menu .law {
+    padding: 0 150px;
+}
+footer .f_menu .law dt {}
+footer .f_menu .law dd {}
+footer .f_menu .law dd a {}
+footer .f_menu .sns {}
+footer .f_menu .sns dt {}
+footer .f_menu .sns dd {}
+footer .f_menu .sns dd a {}
+footer .f_copy {
+    display: flex; flex-flow: column;
+    padding-top: 50px;
+}
+footer .f_copy p{
+    padding-left: 32px;
+}
+footer .f_copy p img {
+    width: 213px;
+}
+footer .f_copy address {
+    line-height: 30px;
+    padding-left: 50px; letter-spacing: -0.02%;
+    font-size: 0.8em;
+    margin-left: 300px;
+}
+footer .f_copy address a{font-size: 1em; text-decoration: underline;}
