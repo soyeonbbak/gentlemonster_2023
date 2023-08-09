@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Gentle Monster</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <!-- header -->
+    <main>
+        <h1>로그인</h1>
+        <div class="login_title">
+            <a href="#" class="active">로그인</a>
+            <a href="#">주문조회</a>
+            <a href="#">회원 가입</a>
+        </div>
+        <!-- 로그인 페이지 -->
+        <div class="login_contents">
+            <div class="login">
+                <form action="#" method="post">
+                    <fieldset id="login1">
+                        <legend class="skip">로그인페이지</legend>
+                        <input type="text" placeholder="아이디" id="id_txt">
+                        <input type="password" placeholder="비밀번호" id="password_txt">
+                        <button type="button" id="eye_btn"></button>
+                        <button type="button" class="login_btn">로그인</button> <!-- window.alert -->
+                    </fieldset>
+                    <fieldset id="login2">
+                        <input type="checkbox" name="auto" value="auto" id="auto_login">
+                        <label for="auto_login">자동로그인</label>
+                        <a href="#">아이디 찾기 |</a>
+                        <a href="#">비밀번호 찾기</a>
+                    </fieldset>
+                    <fieldset id="login3">
+                        <!-- 로그인 페이지 아직 하다 말았음. 자동 로그인까지 완료 -->
+                        <a href="#" class="kakao">카카오 로그인</a>
+                        <a href="#" class="apple">Apple 로그인</a>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- 주문 조회 페이지 -->
+            <div class="order_inquiry">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend class="skip">주문 조회</legend>
+                        <span>이메일</span>
+                        <input type="email">
+                        <fieldset>
+                        <span>주문번호</span>
+                        <input type="text">
+                    </fieldset>
+                </form>
+                <a href="#">주문 내역 조회하기</a>
+            </div>
+            <!-- 회원 가입 페이지 -->
+            <div class="membership">
+                <p>회원가입을 하시면, 주문 조회와 개인정보 관리 및 위시리스트 확인 등 다양한 혜택을 누리실 수 있습니다.</p>
+                <a href="#" class="new_member">신규가입</a>
+                <a href="#" class="kakao">카카오 아이디 가입</a>
+                <a href="#" class="apple">Apple 아이디 가입</a>
+            </div>
+        </div>
+        <script src="./script/login.js"></script>
+    </main>
+    <!-- footer -->
+</body>
+</html>

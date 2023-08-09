@@ -1,0 +1,85 @@
+main {
+    width: 1000px; margin: 0 auto;
+    text-align: center;
+}
+main h1 {font-size: 2.369em; font-weight: 700; padding: 50px 0;}
+main .login_title {
+    margin-bottom: 25px;
+}
+main .login_title a.active{color: black; border-bottom: 2px solid black;}
+main .login_title a{
+    display: inline-block;
+    font-weight: 700; font-size: 1.777em;
+    border-bottom: 1px solid #c1c1c1;
+    width: 150px; color: #c1c1c1;
+}
+main .login_contents {
+    width: 350px; margin: 0 auto;
+    
+}
+main .login_contents .login {}
+main .login_contents .login #login1 {
+    display: flex; flex-flow: column nowrap;
+    position: relative;
+}
+main .login_contents .login #login1 input {
+    height: 45px;
+    border: 1px solid #c1c1c1;
+}
+main .login_contents .login #login1 #id_txt {margin-bottom:15px;}
+main .login_contents .login #login1 #password_txt {}
+main .login_contents .login #login1 #eye_btn {
+    background: url(../images/icon_login_password_look.png) no-repeat;
+    width: 24px; height: 24px;
+    position:absolute; right: 5%; bottom: 45%;
+}
+main .login_contents .login #login1 .login_btn {
+    width: 100%; font-size: 1.333em;
+    padding: 10px 0; margin-top: 25px;
+    background: black; color: #fff; border-radius: 5px;
+}
+/* 자동로그인 . 아이디찾기. 비밀번호 찾기 미완성 */
+main .login_contents .login #login2 {display: flex; margin: 25px 0;}
+main .login_contents .login #login2 #auto_login {}
+main .login_contents .login #login2 a {text-align: right;}
+main .login_contents .login #login2 a:first-child {}
+/* 카카오,애플 로그인 */
+main .login_contents .login #login3 {display: flex; flex-flow: column nowrap;}
+main .login_contents .login #login3 a {
+    padding: 10px 0; font-weight: 600; border-radius: 5px;}
+main .login_contents .login #login3 .kakao {
+    background: url(../images/icon_login_kakao.png) no-repeat #FFE500;
+    background-position: 30% 5px;
+}
+main .login_contents .login #login3 .apple{
+    background: url(../images/icon_login_apple.png) no-repeat;
+    background-position: 30% 5px; margin-top: 15px;
+    border: 1px solid #c1c1c1;
+}
+
+/* 주문 조회 페이지 */
+.login_contents .order_inquiry {}
+.login_contents .order_inquiry form {}
+.login_contents .order_inquiry form fieldset {
+    display: flex; flex-flow: column nowrap;
+    margin: 25px 0;
+}
+.login_contents .order_inquiry form span{text-align: left;}
+.login_contents .order_inquiry form input{height: 45px;
+    border: 1px solid #c1c1c1;}
+.login_contents .order_inquiry a{background: #f1f1f1; color: #999; padding: 10px 0;}
+/* 회원 가입 페이지 */
+.login_contents .membership {display: flex; flex-flow: column nowrap;}
+.login_contents .membership p {}
+.login_contents .membership a {
+    padding: 10px 0; font-weight: 600; margin-top: 15px; border-radius: 5px;}
+.login_contents .membership .new_member {background: black; color: #fff;}
+.login_contents .membership .kakao {
+    background: url(../images/icon_login_kakao.png) no-repeat #FFE500;
+    background-position: 25% 5px;
+}
+.login_contents .membership .apple {
+    background: url(../images/icon_login_apple.png) no-repeat;
+    background-position: 25% 5px;
+    border: 1px solid #c1c1c1;
+}
