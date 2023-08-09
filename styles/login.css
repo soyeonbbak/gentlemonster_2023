@@ -12,6 +12,7 @@ main .login_title a{
     font-weight: 700; font-size: 1.777em;
     border-bottom: 1px solid #c1c1c1;
     width: 150px; color: #c1c1c1;
+    padding-bottom: 10px;
 }
 main .login_contents {
     width: 350px; margin: 0 auto;
@@ -32,6 +33,10 @@ main .login_contents .login #login1 #eye_btn {
     background: url(../images/icon_login_password_look.png) no-repeat;
     width: 24px; height: 24px;
     position:absolute; right: 5%; bottom: 45%;
+    transition: all;
+}
+main .login_contents .login #login1 #eye_btn:hover {/* 자바스크립트로 수정 후 삭제예정 */
+    background: url(../images/icon_login_password_nolook.png);
 }
 main .login_contents .login #login1 .login_btn {
     width: 100%; font-size: 1.333em;
@@ -39,7 +44,7 @@ main .login_contents .login #login1 .login_btn {
     background: black; color: #fff; border-radius: 5px;
 }
 /* 자동로그인 . 아이디찾기. 비밀번호 찾기 미완성 */
-main .login_contents .login #login2 {display: flex; margin: 25px 0;}
+main .login_contents .login #login2 {display: flex; justify-content: space-between; margin: 25px 0;}
 main .login_contents .login #login2 #auto_login {}
 main .login_contents .login #login2 a {text-align: right;}
 main .login_contents .login #login2 a:first-child {}
