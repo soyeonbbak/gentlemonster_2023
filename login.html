@@ -6,10 +6,15 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Gentle Monster</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- style sheet -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
 </head>
+<?php include ("./header.php") ?>
 <body>
     <!-- header -->
     <main>
@@ -20,7 +25,7 @@
             <a href="#">회원 가입</a>
         </div>
         <!-- 로그인 페이지 -->
-        <div class="login_contents">
+        <div class="login_contents active">
             <div class="login">
                 <form action="#" method="post">
                     <fieldset id="login1">
@@ -70,7 +75,9 @@
             </div>
         </div>
         <script src="./script/login.js"></script>
+        <script src="./script/common.js"></script>
     </main>
+    <?php include ("./footer.php") ?> 
     <!-- footer -->
 </body>
 </html>

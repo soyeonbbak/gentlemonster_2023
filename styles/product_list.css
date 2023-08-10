@@ -1,0 +1,94 @@
+main {}
+/* slide 영역 */
+
+/* slide 영역 끝 */
+/* ------------category 메뉴 영역 */
+#category {
+    width: 1350px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    padding: 50px 0; 
+}
+#category a{
+    display: flex; flex-flow: column;
+    text-align: center; width: 170px; height: 170px;
+    border-radius: 50%; 
+
+}
+#category a:hover img{width: 110%;}
+#category a img{width: 100%;}
+#category a span{padding-top:10px; font-size: 0.8em;}
+/* category 메뉴 영역 끝 */
+/* -------------상품 영역 */
+/* 상품헤더 영역 */
+#product_list {
+    width: 1350px; margin: 0 auto;
+}
+#product_list .title {padding: 50px 0;}
+#product_list .title .title_top{
+        display: flex; flex-flow: row nowrap; justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+}
+#product_list .title .title_top p{font-size: 1.777em; font-weight: 600;}
+#product_list .title .title_top #title_left{}
+#product_list .title .title_top #title_left a{
+    padding-right:40px; color: #888; font-weight: 600;
+}
+#product_list .title .title_top #title_left a:hover{color: black;}
+#product_list .title .title_top #title_left a:last-child{padding-right:0;}
+#product_list .title .title_btm{
+        display: flex; flex-flow: row nowrap; justify-content: space-between;
+        padding-top: 50px;
+}
+#product_list .title .title_btm p{font-size: 0.75em;}
+#product_list .title .title_btm p em{font-size: 1em; font-weight: 600;}
+#product_list .title .title_btm #item_array {width: 150px;}
+#product_list .title .title_btm #item_array optgroup{}
+#product_list .title .title_btm #item_array optgroup option{}
+/* 상품 헤더영역 끝 */
+#product_list .container {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#product_list .container .item {width: 260px;}
+#product_list .container .item .box{position: relative; }
+#product_list .container .item .box a img{}
+#product_list .container .item .box .item_img{}
+#product_list .container .item .box .item_img img{
+    width: 100%;
+}
+#product_list .container .item .box .like_img :hover{
+    background-color: pink;
+}
+#product_list .container .item .box .item_img :hover{
+    filter: opacity(0.5);
+    background: url(../images/glasses_img/g_model_01.jpg);
+}
+#product_list .container .item .box .like_img{position: absolute; right: 10px; top: 10px;}
+#product_list .container .item .box .like_img img{}
+#product_list .container .item .item_txt{}
+#product_list .container .item .item_txt p{padding-top: 10px;}
+#product_list .container .item .item_txt .tt{
+    color: #5CB1FF; font-size: 0.75em;
+}
+#product_list .container .item .item_txt .name{font-weight: 700;}
+#product_list .container .item .item_txt .price{font-weight: 600;}
+#product_list .container .item .item_txt .color{
+    display: flex;
+}
+#product_list .container .item .item_txt .color span{
+    width: 24px; height: 24px; border-radius: 50%;
+    margin-right: 5px;
+}
+#product_list .container .item .item_txt .color .color1{
+    background: gray;
+}
+#product_list .container .item .item_txt .color .color2{
+    background: ivory; border: 1px solid black;
+}
+#product_list .container .item .item_txt .color .color3{
+    background: skyblue;
+}
+#product_list .container .item .item_txt .color .color4{
+    background: black;
+}
+/* 상품 영역 끝 */

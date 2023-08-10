@@ -74,7 +74,8 @@ main .login_contents .login #login3 .apple{
     border: 1px solid #c1c1c1;}
 .login_contents .order_inquiry a{background: #f1f1f1; color: #999; padding: 10px 0;}
 /* 회원 가입 페이지 */
-.login_contents .membership {display: flex; flex-flow: column nowrap;}
+.login_contents .membership {display: flex; flex-flow: column nowrap;
+justify-content: space-between;}
 .login_contents .membership p {}
 .login_contents .membership a {
     padding: 10px 0; font-weight: 600; margin-top: 15px; border-radius: 5px;}
