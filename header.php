@@ -13,7 +13,7 @@
             </form>
             <div class="icon">
                 <a href="./login.html" id="login"><img src="./images/icon_login.png" alt="로그인"></a>
-                <a href="#" id="cart"><img src="./images/icon_cart.png" alt="장바구니"></a>
+                <a href="./review.html" id="cart"><img src="./images/icon_cart.png" alt="장바구니"></a>
                 <a href="#" id="menu"><img src="./images/icon_list.png" alt="메뉴창"></a>
             </div>
         </div>
@@ -39,13 +39,13 @@
             </div>
             <!-- 내비게이션 -->
             <nav>
-                <a href="#">선글라스</a>
-                <a href="#">안경</a>
-                <a href="#">콜라보레이션</a>
-                <a href="#">스타일</a>
-                <a href="#">브랜드이슈</a>
-                <a href="#">매장보기</a>
-                <a href="#">수리서비스</a>
+                <a href="./product_list.html">선글라스</a>
+                <a href="./product_list.html">안경</a>
+                <a href="./product_list.html">콜라보레이션</a>
+                <a href="./product_list.html">스타일</a>
+                <a href="./product_list.html">브랜드이슈</a>
+                <a href="./product_list.html">매장보기</a>
+                <a href="./product_list.html">수리서비스</a>
             </nav>
         </div>
     </header>

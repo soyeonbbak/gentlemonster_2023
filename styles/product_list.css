@@ -1,6 +1,51 @@
 main {}
 /* slide 영역 */
-
+main #product_slide {position: relative;}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통슬라이드 slide1~6 */
+    width: 700px; height: 740px; position: relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position: absolute; bottom: 10%; right:5%;
+    /* 초기 숨기기(이후 swiper활용 서서히 나타나고 사라지기 기능추가) */
+    opacity: 0; transition: all 1s; transform: translateX(150px);
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 {
+    font-size: 3.157em; color: white; line-height: 60px;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 em {
+    font-weight: 700; font-size: 1em;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 span {
+    font-size: 0.5em;
+}
+main #product_slide .swiper-wrapper .slide1 {
+    background-image: url(../images/model/model_01.jpg);
+}
+main #product_slide .swiper-wrapper .slide2 {
+    background-image: url(../images/model/model_02.jpg);
+}
+main #product_slide .swiper-wrapper .slide3 {
+    background-image: url(../images/model/model_03.jpg);
+}
+main #product_slide .swiper-wrapper .slide4 {
+    background-image: url(../images/model/model_15.jpg);
+}
+main #product_slide .swiper-wrapper .slide5 {
+    background-image: url(../images/model/model_10.jpg);
+}
+main #product_slide .swiper-wrapper .slide6 {
+    background-image: url(../images/model/model_13.jpg);
+}
+/* slide scrollbar design */
+main #product_slide .swiper-scrollbar {
+    left: 50%; bottom: 5%; transform: translateX(-50%);
+    background: white; width: 25%; height: 2px;
+} /* 스크롤 배경(크기,위치o) */
+main #product_slide .swiper-scrollbar-drag {
+    background: black; 
+} /* 스크롤 막대 (크기x)*/
 /* slide 영역 끝 */
 /* ------------category 메뉴 영역 */
 #category {
