@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매장보기 | 젠틀몬스터</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/map.css">
+</head>
+<body>
+    <!-- php,map local 확인 불가, FTP업로드 후 web확인 가능 -->
+    <!-- header -->
+    <?php include("./header.php") ?>
+    <main>
+        <div id="map"><!-- 지도삽입위치 == 지도를 어디에 만들건지 위치는 준비를 해야한다. --></div>
+        <div class="txt">
+            <p id="here1">인천광역시 부평구 부평대로 인천그린컴퓨터아카데미</p>
+            <p id="here2">버스 10번 타고 오른쪽 도보 2분</p>
+            <p id="here3">인천지하철 1호선 부평역 내려서 부평 소방서 방향으로</p>
+        </div>
+    </main>
+    <!-- footer -->
+    <?php include("./footer.php") ?>
+    <script src="./script/common.js"></script>
+    <!-- kakao 지도를 사용하기 위한 js 앱키 준비 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8e37c2a0e37c0332f26ad5d0d72066f2"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.49226506,126.72246959);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(37.49226506,126.72246959), //지도의 중심좌표.
+        level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+	    position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+</body>
+</html>
