@@ -2,10 +2,10 @@
         <div class="f_menu">
             <dl class="service">
                 <dt>고객 서비스</dt>
-                <dd><a href="#">문의</a></dd>
+                <dd><a href="./qna.html">문의</a></dd>
                 <dd><a href="#">배송</a></dd>
                 <dd><a href="#">서비스</a></dd>
-                <dd><a href="#">교환 및 반품</a></dd>
+                <dd><a href="">교환 및 반품</a></dd>
                 <dd><a href="#">주문조회</a></dd>
                 <dd><a href="#">주문취소</a></dd>
                 <dd><a href="#">매장 픽업 서비스</a></dd>
